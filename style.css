@@ -1,17 +1,28 @@
+html {
+    font-size: 62.5%; 
+}
+body {
+    font-size: 1.6rem; 
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+#E31B23
+#E51A22
+
+/* DESKTOP VIEW */
 .container{
-    height: 100vh;
     width:100vw;
-    /* margin: ; */
-    background-color: darkred;
+    /* background-color: darkred; */
+  
 }
+
 header{
-    width: 100vw;
-    height:10vw;
+    width: 100%;
+    /* height:10vw; */
 
     background-color: white;
     display: flex;
@@ -19,6 +30,11 @@ header{
     align-items: center;
 
     overflow: hidden;
+    box-sizing: border-box;
+
+    padding: 1rem;
+    gap:1rem;
+    border: solid 2px black;
 }
 
 .logo{
@@ -26,30 +42,54 @@ header{
     height: 100px;
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    gap: 1rem;
+    margin-left: 0.5rem;
 
 }
 
 .logo img{
-    width: 50%;
-    height: 100%;
+    width: auto;
+    height: 60px;
 }
 
 .location{
     display: flex;
+    /* background-color: blue; */
+   gap: 1.5rem;
+
 }
 
-.logo material-symbols-outlined{
-    font-size: 40px;
-    color: blue;
+.logo .location .material-symbols-outlined{
+    font-size: 2rem;
+    color: red;
      
 }
 
 nav{
-    background-color: blue;
-    height: 100px;
-    width: 40%;
+    /* background-color: rgb(102, 255, 0); */
+    height: auto;
+    width: 30%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+nav .home{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .shopping-cart{
@@ -58,6 +98,166 @@ nav{
     width: 10%;
 }
 
-.shopping-cart material-symbols-outlined{
-    font-size: larger;
+.shopping-cart .material-symbols-outlined{
+    font-size: 20PX;
+    color: red;
 }
+
+
+
+.maincon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    height:100vh;
+    width: 100vw;
+
+    overflow: hidden;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    /* justify-content: center;
+    align-items: center; */
+
+    flex: 1;
+    margin: 0.9rem;
+}
+
+.top-text, .sub-text{
+    /* margin-top: 2rem; */
+    color: #fc040d;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.sub-text{
+    /* margin-top: 2rem; */
+    color: #fc040d;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text h1{
+    color: #fc040d;
+    /* color: #1C1C1C; */
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 1rem;
+    
+    
+}
+
+.image{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+    flex: 1;
+    /* this is to distibute spcae equally */
+    
+}
+
+.image img{
+    /* width: auto; */
+     height:auto;
+    /* background-color: blue;  */
+    /* margin: 80px; */
+    
+max-width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+    
+    .logo {
+        width: 100%;
+        justify-content: center; 
+    }
+    
+    nav {
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. High-Contrast Contrast (True Complementary)
+This palette uses direct opposites on the color wheel to create maximum contrast, vibrant visual energy, and clean structural separation.
+🟥 Primary Red: #E31B23 (Main brand color)
+🟩 Teal/Cyan: #1BE3DB (Direct vibrant contrast)
+🟦 Deep Navy: #0F172A (Rich background text/neutral)
+⬜ Soft Off-White: #F8FAFC (Clean background) */
+
+/* 2. Modern & Fresh (Analogous + Accent)A sleek, current look that softens the intense red with warm tones and balances it with a cooling forest green accent.
+🟥 Primary Red: #E31B23 (Main accent)
+🍊 Warm Amber: #F59E0B (Secondary focus/warnings)
+🌲 Deep Forest Green: #064E3B (Sophisticated cooling contrast)
+🪙 Warm Slate: #64748B (Neutral text/borders) */
+
+/* 3. Fast-Food Classic (Warm & Inviting)An appetite-stimulating palette modeled after classic food industry design rules, utilizing highly energetic warm tones alongside dark charcoal for high readability.
+🟥 Primary Red: #E31B23 (Action buttons/Headings)
+🟨 Golden Yellow: #FFC72C (Sub-headers/Loyalty tags)
+🖤 Charcoal Black: #1C1C1C (Primary body text)
+🍦 Cream/Ivory: #FFFDF9 (Soft, warm background) */
