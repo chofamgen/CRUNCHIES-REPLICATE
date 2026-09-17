@@ -3,6 +3,7 @@ html {
 }
 body {
     font-size: 1.6rem; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -21,12 +22,13 @@ body {
 }
 
 header{
-    width: 100%;
+    width: 98%;
     /* height:10vw; */
+        font-weight: 900;
 
     background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     overflow: hidden;
@@ -118,12 +120,22 @@ nav li{
     height: 100px;
     width: 10%;
 }
-
 .material-symbols-outlined.cart-icon {
     font-size: 20PX;
     color: red;
 }
+.material-symbols-outlined.ham-menu {
+    font-size: 20PX;
+    color: red;
 
+    display: none   !important;
+}
+@media(max-width:1024px) {
+    material-symbols-outlined ham-menu {
+        display: none;
+    }
+
+}
 
 
 .maincon{
@@ -179,11 +191,11 @@ nav li{
 }
 
 .image{
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
     overflow: hidden;
 
-    flex: 1;
+    flex: 1; */
     /* this is to distibute spcae equally */
     
 }
@@ -195,6 +207,10 @@ nav li{
     /* margin: 80px; */
     
 max-width: 100%;
+
+
+width: 100%;
+height: 100%;
 
 }
 
@@ -218,6 +234,8 @@ max-width: 100%;
     gap:5px;
     margin-left: 20px;
 
+    
+
 }
 h1.btext {
     color: white;
@@ -226,28 +244,42 @@ h1.btext {
 
 /* FOOD SECTION */
 .food{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    height: 600px;
-    overflow: auto;
-    gap: 5rem;
+    display: grid;
+   
+    width: 80%;
+    /* height: 700px; */
+    margin: 40px auto;
+    overflow: hidden;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows:    1fr 1fr 1fr; */
+    
+    /* grid-gap: 50px 50px; */
     /* background-color: blueviolet; */
+
+     place-items: center;
+   /* justify-content: space-around; */
+
 }
 
-.food .food1{
-    display: flex;
-    height:40%;
-    width:100%;
-    gap: 35px;
-    justify-content: center;
-    /* background-color: #4afc04; */
+.food > .food-divs {
+  width: 90%;         
+  height: 80%;        
+  overflow: hidden;   
+  border-radius: 10px;
+  border: 1px solid #fc040d ;
+  /* background-color: black; */
+
+   object-fit: cover;
+    object-position: center;
 }
 
-.food img{
-    border-radius: 20px;
-    border: 0.5px solid #fc040d;
+.food-divs > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+     /* border-radius: 30px; */
 
 }
 
@@ -349,6 +381,100 @@ background-color: #fc040d;
      border-radius: 5.5rem;
 
  }
+
+
+
+
+ /* BLOG SECTION */
+.blog-container{
+     background-color: #f1070f44;
+     width: 100vw;
+     /* height: 900px;  we actually do not need height */
+     margin: 100px auto;
+    display: grid;
+        box-sizing: border-box;
+     padding: 2%;
+}
+
+ .blog{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr   ;
+    /* grid-template-rows:1fr 1fr minmax(50px, auto) ; */
+    
+    /* background-color: blueviolet; */
+    place-items: center;
+
+ 
+   
+    margin: 50px auto;
+    gap: 2rem 2rem;
+}
+
+.blog .offer {
+   height: 100%;
+   width: 85%;
+    /* background-color: red; */
+    border-radius: 10px;
+    
+    
+} 
+
+.blog .offer img{
+    height: 100%;
+    width: 100%;
+
+    object-position: center;
+    object-fit: cover;
+}
+
+
+/* footer css */
+footer{
+    display: grid;
+    width: 100vw;
+    /* height: 40vw; */
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-color: #fc040d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
