@@ -31,19 +31,29 @@
             </div>
 
             <nav>
-                <!-- <a class="home" href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">My account</a>
-                <a href="#">Support</a>  -->
+
+
+
 
                 <ul>
-                    <li class="home">HOME</li>
+                    <li class="home">
+                        <a class="home" href="#">Home</a>
+                    </li>
 
-                    <li>MENU</li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
 
-                    <li>MY ACCOUNT</li>
+                    <li>
+                        <a href="#">My account</a>
+                    </li>
 
-                    <li>SUPPORT</li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+
+
+
                 </ul>
             </nav>
 
@@ -57,40 +67,46 @@
         </header>
     </div>
 
-    <main class="maincon">
-        <div class="text">
-            <p1 class="top-text"> Welcome to Crunchies! </p1>
+    <!-- start of main -->
+    <main>
+        <div class="WELCOME-TEXT-CONTAINER">
+            <p1 class="top-text" style="font-size: 2.5rem;"> Welcome to Crunchies! </p1>
 
-            <h1>
+            <h1 style="font-size: 7rem; margin-bottom: 1rem;">
                 Taste the <br />
                 Difference...
             </h1>
 
-            <p class="sub-text">How would you like to receive your <br />order?</p>
+            <p class="sub-text" style="font-size: 2rem;">How would you like to receive your <br />order?</p>
+
+
+            <div class="DELIVERY-AND-PICKUP">
+
+                <div class="box1">
+                    <span class="material-symbols-outlined bo-text" style="color: white;">
+                        local_shipping
+                    </span>
+                    <h1 class="b-text" style="color: white;">DELIVERY</h1>
+                </div>
+
+                <div class="box1">
+                    <span class="material-symbols-outlined bo-text" style="color: white;" font-size: 3rem;>
+                        shopping_bag
+                    </span>
+                    <h1 class="b-text" style="color: white;">PICK UP</h1>
+                </div>
+
+            </div>
         </div>
+
+
 
         <div class="image">
             <img src="./images/woman.webp" alt="sweet ladyh" />
         </div>
     </main>
 
-    <div class="buybtn">
-
-        <div class="box1">
-            <span class="material-symbols-outlined" style="color: white;">
-                local_shipping
-            </span>
-            <h1 class="btext">DELIVERY</h1>
-        </div>
-
-        <div class="box1">
-            <span class="material-symbols-outlined" style="color: white;" font-size: 3rem;>
-                shopping_bag
-            </span>
-            <h1 class="btext">PICK UP</h1>
-        </div>
-
-    </div>
+    <!-- end of main -->
 
     <h1 style="color: #fc040d; text-align: center; margin-top: 80px ; font-size: 40px;">DISCOVER OUR MENU</h1>
 
@@ -98,6 +114,7 @@
         style="background-color: #fc040d;  width: 10%;  height: 10px;  border-radius: 5px; margin: auto; margin-bottom: 25px; ">
     </div>
 
+    <!-- BEGIN OF FOOD SECTION -->
     <div class="food">
         <div class="food-divs">
             <img src="./images/1 party jollof.webp" alt="">
@@ -123,13 +140,17 @@
             <img src="./images/6 dodo.webp" alt="">
         </div>
     </div>
+    <!-- END OF FOOD SECTION -->
+
 
     <div style="display: flex; justify-content: center; align-items: center; ">
-        <div style="background-color: #fc040d;  width: 20%;  height: 40px;  border-radius: 5px;">
-            <h1 style="color: white; text-align: center; ">See Our Menu</h1>
+        <div style="background-color: #fc040d;  width: 10em;  height: 2em;  border-radius: 5px;">
+            <h1 style="color: white; text-align: center; font-size: 2rem;">See Our Menu</h1>
         </div>
     </div>
 
+
+    <!-- BEGIN OF ORDER ON THE GO -->
     <div class="phone">
         <div class="box-phone" ">
             <img src=" ./images/MOBILE-phone.webp" alt="">
@@ -142,6 +163,7 @@
 
         </div>
     </div>
+    <!-- END OF ORDER ON THE GO -->
 
     <h1 style="color: #fc040d; text-align: center; margin-top: 180px ; font-size: 40px;">About Us</h1>
 
@@ -149,6 +171,7 @@
         style="background-color: #fc040d;  width: 4%;  height: 10px;  border-radius: 5px; margin: auto; margin-bottom: 25px; ">
     </div>
 
+    <!-- BEGIN OF ABOUT SECTION -->
     <div class="about-us">
         <div class="about" style="color: black;">
             <p style="line-height: 1.4; font-weight: 500;">Crunchies Fried Chicken is a first-grade quick service
@@ -160,11 +183,15 @@
                 from interacting with our valued customers.
             </p>
         </div>
+        
+
+
 
         <div class="about-pic">
             <img src="./images/About_US-pic.webp" alt="">
         </div>
     </div>
+    <!-- END OF ABOUT SECTION -->
 
     <div class="blog-container">
         <div class="blog">
@@ -186,8 +213,8 @@
         </div>
     </div>
 
-
-    <footer>
+    <!-- 
+    <footer >
         <div class="footer-div">
             <img src="./images/main logo.webp" alt="">
         </div>
@@ -200,7 +227,7 @@
             <h1>coming soon</h1>
 
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
